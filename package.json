@@ -1,11 +1,15 @@
 {
+  "homepage": "https://nischal-portfolio.github.io/portfolio",
   "name": "nischal-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "framer-motion": "^9.0.0",
